@@ -18,6 +18,9 @@ Pewlett Hackard is a well established company with thousands of employees in bus
 ![unique_titles_groupby](https://github.com/cortesh/Pewlett-Hackard-Analysis/blob/main/Analysis%20Projects%20Folder/Pewlett-Hackard%20Analysis%20Folder/unique_titles_groupby.PNG)
 
 * the size of the mentor program is insufficient to meet the training and replacement demands (1,549 mentorees or just 17% of the retirement pool).
+
+![mentorees_title_groupby](https://github.com/cortesh/Pewlett-Hackard-Analysis/blob/main/Analysis%20Projects%20Folder/Pewlett-Hackard%20Analysis%20Folder/mentorees_title_groupby.PNG)
+
 * a deeper dive into the mentor pool shows that senior engineer title is in particular risk with only 169 mentorees holding that title (this represents only 0.6% of the retiring class!)
 
 # Summary: Main Takeaways:
