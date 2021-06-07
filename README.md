@@ -28,4 +28,9 @@ Pewlett Hackard is a well established company with thousands of employees in bus
 * a total 90,398 employees are reaching or of age to retire
 * only 1,549 employees between the ages of 55 (born in 1965) who are experienced enough to take over the top rungs of the company.
 
-However, if you adjust the birth date range by 5 years, from 1960-1965 (instead of only 1965), you can generate a mentoree pool of 93,756 or 104% of the retiring class!  This would give Pewlett Hackard more than enough up-and-coming leaders.  Nevertheless, it is clear that Pewlett Hackard's employee pool skews heavily towards an older demographic which on the one hand implies that it is a good place to work, where most choose to live out their careers there, but that too little investment is made in bringing in and cultivating young talent.
+However, if you adjust the birth date range by 5 years, from 1960-1965 (instead of only 1965), you can generate a mentoree pool of 93,756 or 104% of the retiring class!  
+
+![new_mentor_class](https://github.com/cortesh/Pewlett-Hackard-Analysis/blob/main/Analysis%20Projects%20Folder/Pewlett-Hackard%20Analysis%20Folder/new_mentor_class.PNG)
+
+
+This would give Pewlett Hackard more than enough up-and-coming leaders.  Nevertheless, it is clear that Pewlett Hackard's employee pool skews heavily towards an older demographic which on the one hand implies that it is a good place to work, where most choose to live out their careers there, but that too little investment is made in bringing in and cultivating young talent.
