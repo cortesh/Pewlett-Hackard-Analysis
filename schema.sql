@@ -1,13 +1,13 @@
 -- Creating tables for PH-EmployeeDB
+
+-- remember to import primary tbles first, then dependent tables.
+
 CREATE TABLE departments (
      dept_no VARCHAR(4) NOT NULL,
      dept_name VARCHAR(40) NOT NULL,
      PRIMARY KEY (dept_no),
      UNIQUE (dept_name)
 );
-
--- had to drop table because i made mistake first time
-DROP TABLE employees;
 
 CREATE TABLE employees (
 	emp_no INT NOT NULL,
@@ -35,23 +35,26 @@ CREATE TABLE salaries (
   from_date DATE NOT NULL,
   to_date DATE NOT NULL,
   FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-  PRIMARY KEY (emp_no)
+  PRIMARY KEY (emp_no,from_date)
 );
--- option 1
+-- composite primary key using emp_no, title, from_date
 CREATE TABLE titles (
 	emp_no INT NOT NULL,
 	title VARCHAR NOT NULL,
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-	PRIMARY KEY (emp_no)
+	PRIMARY KEY (emp_no,title,from_date)
+
 );
 
+-- No primary key was assigned because no field had unique values; instead two foreign keys were added
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
 	dept_no VARCHAR NOT NULL,
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-	PRIMARY KEY (emp_no)
+	FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
+	PRIMARY KEY ('emp_no','dept_no')
 );
